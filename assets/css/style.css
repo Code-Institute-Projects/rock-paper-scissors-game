@@ -200,6 +200,27 @@ body {
     color: white;
 }
 
+/* Reset Button*/
+.btn--reset {
+    width: 150px;
+    height: 50px;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: white;
+    background-color: #f44336; /* Red color */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin: 20px auto;
+    transition: background-color 0.3s;
+}
+
+.btn--reset:active,
+.btn--reset:hover {
+    background-color: #9fcf1b; /* Darker red color */
+}
+
 
 
 
@@ -207,7 +228,7 @@ body {
 /* --------- Media queries */
 
 /* Media query: tablets and larger (768px and up) */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .btn--big {
         margin: 0 15px;  
         padding: 25px;     
@@ -230,7 +251,7 @@ body {
 
 }
 
-@media (max-width: 414px) {
+@media (max-width: 600px) {
     .controls-area {
         width: 100%;
         display: flex;
@@ -285,16 +306,14 @@ body {
         font-size: 2rem;
     }
 }
-
-@media (max-width: 320px) {
+/*Controls Area  max-width: 600px */
+@media (max-width: 600px) {
 
     .logo {
         height: 80px;
         padding-left: auto;
     }
 
-
-    /*Controls Area  max-width: 320px */
 
     .game-area {
         height: 30vh;
@@ -345,19 +364,6 @@ body {
         text-align: center;
     }
 
-    /* Result Area  max-width: 320px  */
-
-
-    #user-choice {
-        margin-top: 20px;
-        text-align: left;
-
-    }
-
-    #computer-choice {
-        margin-top: 20px;
-        text-align: left;
-    }
 
 
 
