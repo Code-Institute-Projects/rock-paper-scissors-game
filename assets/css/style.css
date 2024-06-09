@@ -22,7 +22,8 @@ body {
 
 .logo {
     height: 100px;
-    padding-right: 5px;
+    padding-right: 2px;
+  
 }
 
 /* --------- Game layout */
@@ -202,23 +203,39 @@ body {
 @media (max-width: 414px) {
     .controls-area {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
     }
 
     .btn--big {
         margin: 0 10px;
-        padding: 5px;
-        border: 5px solid;
-        width: 50px;
-        height: 50px;
+        padding: 2px;
+        border: 2px solid;
+        width: 42px;
+        height: 42px;
         font-size: 1.5rem;
     }
 
     .btn--big::after {
         font-size: 0.6rem;
-        left: -0.7rem;
+        left: -0.2rem;
+        bottom: -15px;
+        position: relative;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .result-area {
+        margin-top: 80px;
+        text-align: left;
+        margin-left: 20px;
+        padding-left: 10px;
+       
+        
     }
 
-    
     .score-area {
         width: 100%;
     }
@@ -235,18 +252,34 @@ body {
 }
 
 @media (max-width: 320px) {
+    
+        .logo {
+            height: 80px;
+            padding-left: auto;
+        }
+
+    }
     .game-area {
         height: 70vh;
     }
 
     .controls-area {
-        width: 75%;
-        margin: 10px auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
     }
+       #user-choice {
+        margin-top: 20px;
+       }
+    
+       #computer-choice{
+        margin-top: 20px;
 
-    .btn--big {
-        margin: 10px 10px;
-    }
-   
+
+       }
+
+    
 
 }
