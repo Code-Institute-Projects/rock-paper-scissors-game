@@ -80,10 +80,7 @@ function updateScore(result) {
     }
 }
 
-function reduceTries() {
-    let tries = parseInt(document.getElementById("tries-count").innerText);
-    document.getElementById("tries-count").innerText = --tries;
-}
+
 
 function resetGame() {
 
