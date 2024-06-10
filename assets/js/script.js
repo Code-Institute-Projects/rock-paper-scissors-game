@@ -59,6 +59,7 @@ function checkAnswer(playerChoice, computerChoice) {
 }
 
 
+
 function calculateComputerChoice() { 
     const choices = ["rock", "paper", "scissors", "lizard", "spock"];
     const randomIndex = Math.floor(Math.random() * choices.length);
@@ -85,7 +86,7 @@ function reduceTries() {
 }
 
 function resetGame() {
-}
+
 
 function handleButtonClick() { }
 
