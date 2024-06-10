@@ -199,29 +199,22 @@ body {
 }
 
 /* Reset Button*/
-.btn--reset {
-    width: 150px;
-    height: 50px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: white;
-    background-color: #f44336;
-    /* Red color */
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    margin: 20px auto;
-    transition: background-color 0.3s;
+.tries-area {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#reset-game {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 .btn--reset:active,
 .btn--reset:hover {
     background-color: #73d32f;
-    
 }
-
-
 
 
 
@@ -248,15 +241,52 @@ body {
 }
 
 @media (max-width: 320px) {
-    .controls-area {
-        width: 100%;
+    .game-area {
+        height: 70vh;
     }
 
-    
+    .controls-area {
+        width: 75%;
+        margin: 10px auto;
+    }
+
+    .btn--big {
+        margin: 10px 10px;
+    }
+
+
 }
 
+@media (max-width: 768px) {
+
+    .btn--big {
+        margin: 0 20px;
+        padding: 1px;
+        border: 5px solid;
+        width: 80px;
+        height: 80px;
+        margin-top: 2%
+    }
+
+    .result-area p {
+        margin-left: -110px;
+        text-align: left;
+    }
+
+    .game-area {
+        max-height: 850px;
+        max-width: 768px;
+
+    }
+
+    .logo {
+        height: 70px;
+        padding-right: 0.5px;
+        margin-top: 2%
+    }
 
 
 
+}
 
-
+@media (min-width: 1024px) {}
