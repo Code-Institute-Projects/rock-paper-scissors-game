@@ -90,11 +90,12 @@ function resetGame() {
     document.getElementById("wins").innerText = "0";
     document.getElementById("losses").innerText = "0";
     document.getElementById("draws").innerText = "0";
-    document.getElementById("tries-count").innerText = "10";
+    document.getElementById("tries-count").innerText = "10"; 
     document.getElementById("user-choice").innerText = "You chose: ";
     document.getElementById("computer-choice").innerText = "Computer chose: ";
     document.getElementById("result").innerText = "Result: ";
 }
+
 
 
 function displayResult(result) {
