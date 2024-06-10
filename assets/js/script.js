@@ -86,6 +86,10 @@ function reduceTries() {
 }
 
 function resetGame() {
+    document.getElementById("wins").innerText = "0";
+    document.getElementById("losses").innerText = "0";
+    document.getElementById("draws").innerText = "0";
+}
 
 
 function handleButtonClick() { }
