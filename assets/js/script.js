@@ -1,11 +1,11 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
-        button.addEventListener("click", function() {
+        button.addEventListener("click", function () {
             let dataType = this.getAttribute("data-type");
             if (dataType === "reset") {
                 alert("Reset button clicked. The game will be reset.");
@@ -42,23 +42,58 @@ function runGame(playerChoice = null) {
 }
 
 
-function checkAnswer {}
+function checkAnswer(playerChoice, computerChoice) {
+    if (playerChoice === computerChoice) {
+        return "draw";
+    } else if (
+        (playerChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
+        (playerChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
+        (playerChoice === "scissors" && (computerChoice === "paper" || computerChoice === "lizard")) ||
+        (playerChoice === "lizard" && (computerChoice === "spock" || computerChoice === "paper")) ||
+        (playerChoice === "spock" && (computerChoice === "scissors" || computerChoice === "rock"))
+    ) {
+        return "win";
+    } else {
+        return "lose";
+    }
+}
 
-function calculateComputerChoice(){}
 
-function incrementScore(){}
+function calculateComputerChoice() { 
+    const choices = ["rock", "paper", "scissors", "lizard", "spock"];
+    const randomIndex = Math.floor(Math.random() * choices.length);
+    return choices[randomIndex];
+}
 
-function reduceTries() {}
 
-function resetGame() {}
+function updateScore(result) {
+    if (result === "win") {
+        let wins = parseInt(document.getElementById("wins").innerText);
+        document.getElementById("wins").innerText = ++wins;
+    } else if (result === "lose") {
+        let losses = parseInt(document.getElementById("losses").innerText);
+        document.getElementById("losses").innerText = ++losses;
+    } else if (result === "draw") {
+        let draws = parseInt(document.getElementById("draws").innerText);
+        document.getElementById("draws").innerText = ++draws;
+    }
+}
 
-function handleButtonClick(){}
+function reduceTries() {
+    let tries = parseInt(document.getElementById("tries-count").innerText);
+    document.getElementById("tries-count").innerText = --tries;
+}
+
+function resetGame() {
+}
+
+function handleButtonClick() { }
 
 /* code source: https://stackoverflow.com/questions/76196162/function-that-gets-button-click */
 
-function attachButtonEventListeners(){}
+function attachButtonEventListeners() { }
 
 /* code source : https://stackoverflow.com/questions/57742395/how-do-i-make-a-function-that-reset-the-game-on-click */
 
-function initializeGame() {}
+function initializeGame() { }
 
