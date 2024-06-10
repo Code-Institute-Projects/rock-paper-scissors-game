@@ -1,6 +1,7 @@
 // Wait for the DOM to finish loading before running the game
 // Get the button elements and add event listeners to them
 
+/* code source: https://stackoverflow.com/questions/76196162/function-that-gets-button-click  + love maths project */
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
 
@@ -96,13 +97,13 @@ function resetGame() {
 }
 
 
-function handleButtonClick() { }
+function displayResult(result) {
+    function displayResult(result) {
+        document.getElementById("result").innerText = `Result: ${result}`;
+}
 
-/* code source: https://stackoverflow.com/questions/76196162/function-that-gets-button-click */
 
-function attachButtonEventListeners() { }
 
-/* code source : https://stackoverflow.com/questions/57742395/how-do-i-make-a-function-that-reset-the-game-on-click */
 
-function initializeGame() { }
+
 
