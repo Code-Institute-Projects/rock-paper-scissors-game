@@ -98,11 +98,13 @@ function resetGame() {
 
 
 function displayResult(result) {
-    function displayResult(result) {
-        document.getElementById("result").innerText = `Result: ${result}`;
+    document.getElementById("result").innerText = `Result: ${result}`;
 }
 
-
+function displayChoices (playerChoice, computerChoice) {
+    document.getElementById("user-choice").innerText = `You chose: ${playerChoice}`;
+    document.getElementById("computer-choice").innerText = `Computer chose: ${computerChoice}`;
+}
 
 
 
