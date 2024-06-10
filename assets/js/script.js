@@ -21,8 +21,25 @@ document.addEventListener("DOMContentLoaded", function() {
 
     runGame();
 });
+/*  code source: https://stackoverflow.com/questions/70815987/rock-paper-scissors-player-choice-always-returns-null-js */
+/*  https://stackoverflow.com/questions/73015826/javascript-innertext */
 
-function runGame() {}
+function runGame(playerChoice = null) {
+    if (playerChoice) {
+        const computerChoice = calculateComputerChoice();
+        const result = checkAnswer(playerChoice, computerChoice);
+        displayChoices(playerChoice, computerChoice);
+        displayResult(result);
+        updateScore(result);
+        reduceTries();
+
+
+        if (document.getElementById("tries-count").innerText == "0") {
+            alert("Game over! Resetting game.");
+            resetGame();
+        }
+    }
+}
 
 
 function checkAnswer {}
