@@ -3,12 +3,12 @@
 ## Overview 
 The Rock Paper Scissors Game is a simple yet entertaining project designed to let users play the classic game against a computer opponent. This project provides a fun way to spend time while also exercising strategic thinking and decision-making skills. Players can choose from various hand gestures, and the computer randomly selects its choice. The game keeps track of wins, losses, and draws, allowing players to see how well they're performing.
 
-![MediaView]()
+![MediaView](assets/images/media-view.png)
 
 
 ## Live Site
 
-wwww.............
+https://alexkalisz.github.io/rock-paper-scissors/
 
 ## Repository
 
