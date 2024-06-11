@@ -18,11 +18,19 @@ https://github.com/alexkalisz/rock-paper-scissors
 
 Alexandra Kalisz
 
+## User Experiance(UX)
+
+### Target Audience
+Rock, paper, scissors, lizard sock game is designed for diverse audience like cassual gamers, children and families, students,
+ individuals who require accsible game design, including those who need screen readers and high contrast visuals.
+
+### Project Goals
+The primary goals of the Rock Paper Scissors game project are to provide entertainment,
+ ensure accessibility and offer responsive design as well as promote user engagement.
+
 ## Wire Frame
 
-
 ![Wireframe](assets/images/wireframe.png)
-
 
 ## Features
 
@@ -53,11 +61,18 @@ Alexandra Kalisz
 
 
 ### Tries Area
+
  - Shows number of tries left for player, the number counts down from 10 tries.
  - Reset button allows player to reset the count downs anytime back to 10.
 
 ![Tries Area](assets/images/tries-area.png)
- 
+
+### Future Features
+
+In the feature game can have features like:
+-  Multiplayer mode, allowing users to play against friends or other online opponents in real-time.
+- Customizable themes and avatars will add a personal touch to the game.
+
 ## How to Play
 
 - Click on one of the hand gesture buttons (rock, paper, scissors, lizard, or spock). 
@@ -67,8 +82,24 @@ Alexandra Kalisz
 
 ## Testing
 - The game has been tested and works in popular browsers such as Chrome, Firefox, Safari, and Brave.
-- Responsive design ensures functionality on various screen sizes.
+- Responsive design ensures functionality on various screen sizes like Desktop, laptop, smartphone.
 - The game logic has been validated to ensure accurate scores.
+- The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
+
+### HTML Validator
+![HTML Validator] ()
+
+
+### CSS Validator
+! [CSS Validator] 
+
+### Lighthouse Testing
+
+![Lighthouse Performance](assets/images/lighthouse-performance.png)
+
+
+
+
 
 ## Credits
 
