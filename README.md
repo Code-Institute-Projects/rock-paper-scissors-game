@@ -92,8 +92,8 @@ https://stackoverflow.com/questions/73015826/javascript-innertext
 - Website was deployed to GitHub, steps of deployment:
 1. Go to Settings tab in the GitHub repository.
 2. Clock Pages on the left side of the screen.
-3. Using drop down menu in Source section - choose Master Branch.
-4. Swllection of Master Branch will automatically refresh the page and shoe ribbon display to confirm succesful deployment.
+3. Using drop down menu in Source section - choose Main Branch.
+4. Sellection of Main Branch will automatically refresh the page and shoe ribbon display to confirm successful deployment.
 
 
 
