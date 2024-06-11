@@ -87,11 +87,11 @@ In the feature game can have features like:
 - The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
 ### HTML Validator
-![HTML Validator] ()
+![HTML Validator] (assets/images/html-validator.png)
 
 
 ### CSS Validator
-! [CSS Validator] 
+! [CSS Validator](assets/images/css-validator.png)
 
 ### Lighthouse Testing
 
