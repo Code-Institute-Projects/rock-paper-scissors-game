@@ -86,6 +86,7 @@ https://stackoverflow.com/questions/73015826/javascript-innertext
 - The logo image downloaded from:   https://www.hiclipart.com/free-transparent-background-png-clipart-havpw/download
 - Fonts:  Font Awesome
 - Tutorials: https://www.youtube.com/watch?v=wux_u6NXxq0
+- Favicon icon :https://www.klipartz.com/en/sticker-png-hogig/download
 
 
 ## Deployment
