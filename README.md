@@ -51,14 +51,23 @@ Alexandra Kalisz
 - Displays the choices made by player and the computer.
 - Shows the results of each round (win, lose, draw).
 
+![Results Area](assets/images/results-area.png)  
+
+
+
+
 ### Score Area
 
 - Tracks number of wins, loses and draws for the player.
+
+![Score Area](assets/images/score-area.png)
+
 
 ### Tries Area
  - Shows number of tries left for player, the number counts down from 10 tries.
  - Reset button allows player to reset the count downs anytime back to 10.
 
+![Tries Area](assets/images/tries-area.png)
  
 ## How to Play
 
