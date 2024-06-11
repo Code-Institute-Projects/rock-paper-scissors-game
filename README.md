@@ -18,21 +18,10 @@ https://github.com/alexkalisz/rock-paper-scissors
 
 Alexandra Kalisz
 
-## Wire Frames
+## Wire Frame
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+![Wireframe](assets/images/wireframe.png)
 
 
 ## Features
