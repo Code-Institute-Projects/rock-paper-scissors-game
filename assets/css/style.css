@@ -17,54 +17,56 @@ body {
 
 .logo {
     height: 70px;
-    padding-right: 15px;
+    
 
 }
 
 /* --------- Game layout */
 
 .game-area {
-    background-color: #b1a8f24f;
+    background-color: rgb(217, 202, 217);
     box-sizing: border-box;
     width: 95%;
-    height: 95vh;
-    max-height: 750px;
-    max-width: 1000px;
-    margin: auto;
+    height: 85vh;
+    max-height: 950px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
+
 
 /* --------- Results Area */
 #user-choice {
     margin-bottom: 20px;
-    padding-top: 50%;
+    padding-top: inherit;
 }
 
 .result-area {
     font-size: 1.5rem;
-    margin-top: 100px auto;
+    margin-top: 10%;
+   
 
 }
 
 .result-area p {
-    margin: 20px 0;
+    margin-top: 5%;
+   
 }
 
 .score-area {
     margin: 5px auto;
+    margin-top: 10%;
 
     width: 60%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .controls-area {
-    width: 85%;
     margin: 10px auto;
     display: flex;
     justify-content: center;
+    margin-top: 5%;
     flex-wrap: wrap;
 }
 
@@ -107,19 +109,14 @@ body {
 
 /* --------- Buttons */
 
-.btn {
-    width: 220px;
-    height: 60px;
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    color: white;
+#reset-game {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 
-.btn:focus {
-    outline: none;
-}
 
 .btn--big {
     padding-top: 10px;
@@ -202,12 +199,7 @@ body {
     text-align: center;
 }
 
-#reset-game {
-    margin-top: 10px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    cursor: pointer;
-}
+
 
 .btn--reset:active,
 .btn--reset:hover {
@@ -217,6 +209,19 @@ body {
 
 
 /* --------- Media queries */
+
+@media (max-width: 480px) {
+
+    .btn--big {
+        margin: 0 19px;
+        padding: 2px;
+        border: 3px solid;
+        width: 55px;
+        height: 55px;
+        font-size: 2.2rem;
+    }
+}
+
 
 @media (max-width: 768px) {
 
@@ -230,8 +235,8 @@ body {
     }
 
     .result-area p {
-        margin-left: -110px;
-        text-align: left;
+        font-size: 1.5rem;
+        margin-top: 100px;
     }
 
     .game-area {
@@ -248,46 +253,6 @@ body {
 }
 
 
-
-@media (max-width: 480px) {
-
-    .game-area {
-
-        box-sizing: border-box;
-        width: 95%;
-        height: 90vh;
-        max-height: 1000px;
-        max-width: 1000px;
-        margin-bottom: 50%;
-        padding: 1%;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .controls-area {
-        width: 100%;
-    }
-
-    .btn--big {
-        margin: 0 1px;
-        padding: 3px;
-        border: 5px solid;
-        width: 30px;
-        height: 30px;
-        font-size: 1.5rem;
-    }
-
-    .btn--big::after {
-        font-size: 0.6rem;
-        left: -0.7rem;
-    }
-
-    .logo {
-        height: 50px;
-        padding-right: 0.5px;
-        margin-top: 1%
-    }
-}
 
 @media (max-width: 1024px) {
     .btn--big {
