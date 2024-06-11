@@ -9,9 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
         button.addEventListener("click", function () {
             let dataType = this.getAttribute("data-type");
             if (dataType === "reset") {
+                alert("Reset button clicked. The game will be reset.");
                 resetGame();
             } else {
                 let playerChoice = dataType;
+                alert(`Button clicked: ${playerChoice}. Starting game.`);
                 runGame(playerChoice);
             }
         });
