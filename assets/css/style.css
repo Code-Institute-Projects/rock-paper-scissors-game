@@ -26,8 +26,8 @@ body {
     background-color: rgb(217, 202, 217);
     box-sizing: border-box;
     width: 95%;
-    height: 85vh;
-    max-height: 950px;
+    height: 750vh;
+    max-height: 800px;
     max-width: 830px;
     margin-left: auto;
     margin-right: auto;
